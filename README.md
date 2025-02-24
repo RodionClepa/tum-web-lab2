@@ -1,22 +1,27 @@
-# Lab 2 - Landing page
+# Spare Parts Landing Page
 
-Create a web page for your/friends/relatives business (example: car-rent, cookies-shop, crypto-scam)
+Welcome to the **Spare Parts Landing Page** repository! This project is a responsive and modern landing page designed for a spare parts business. It showcases high-quality spare parts, highlights the benefits of choosing the business, and provides contact information for customers.
 
-## Customer requirements
+## Features
+- **Hero Section**: A visually appealing introduction with a call-to-action button.
+- **Why Choose Us Section**: Highlights the business's unique selling points (quality, location, pricing).
+- **Shop Section**: Displays products in a responsive grid layout.
+- **View Details Section**: Provides contact information and an embedded Google Map for easy location access.
 
-- Some form of navigation to sections (links, buttons)
-- Call to action
-- At least 4 sections ([see examples](https://webflow.com/blog/high-converting-landing-page))
-- Pleasant to the eyes
+## Screenshots
+Here are some screenshots of the landing page:
 
-## Dev requirements
+### Hero Section
+![Hero Section](screenshots/hero-section.png)
 
-- Use vanilla CSS and HTML (no frameworks)
-- Have a decent git history (no one commit)
-- The page should be deployed on a free hosting service (example: GitHub Pages, Vercel, Netlify)
-- Project repo should have a README with a short description of the landing page topic, screenshots, and a link to the live demo
+### Why Choose Us Section
+![Why Choose Us Section](screenshots/why-choose-us.png)
 
-## Other requirements:
+### Shop Section
+![Shop Section](screenshots/shop-section.png)
 
-- For potential maximal mark, a WIP version should be submitted during the class
-- Use index.html, reset.css
+### View Details Section
+![View Details Section](screenshots/view-details.png)
+
+## Live Demo
+Check out the live demo of the landing page: [Live Demo](https://rodionclepa.github.io/tum-web-lab2/)  
