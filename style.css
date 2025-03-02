@@ -155,9 +155,15 @@
   flex-direction: column;
   gap: 8px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
 }
 
 .product-card .text-block h3 {
+  font-size: 1.5rem;
+  color: #333;
   font-size: 1.5rem;
   color: #333;
 }
@@ -165,9 +171,15 @@
 .product-card .text-block p {
   font-size: 1rem;
   color: #666;
+  font-size: 1rem;
+  color: #666;
 }
 
 .cta-btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  max-width: 230px;
   display: inline-block;
   cursor: pointer;
   border: none;
@@ -183,14 +195,26 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  text-align: center;
+  background-color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .view-details h2 {
   font-size: 2.5rem;
   color: #333;
+  font-size: 2.5rem;
+  color: #333;
 }
 
 .details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -203,9 +227,17 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .details-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #333;
@@ -215,13 +247,20 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .details-info strong {
   color: #333;
+  color: #333;
 }
 
 .details-map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -237,6 +276,70 @@
 .mobile-best h2 {
   font-size: 1.8rem;
   color: #333;
+}
+
+/* Mascot Styles */
+.mascot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+
+.mascot.show {
+  opacity: 1;
+}
+
+.mascot-svg {
+  animation: wave 2s infinite ease-in-out;
+}
+
+.mascot-message {
+  display: none;
+  position: absolute;
+  bottom: 110px;
+  right: 0;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mascot-message::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff6600;
+}
+
+.mascot:hover .mascot-message {
+  display: block;
+}
+
+/* Animation */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media only screen and (max-width: 600px) {
