@@ -227,6 +227,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.mobile-best {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mobile-best h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
 @media only screen and (max-width: 600px) {
   .details-grid {
     display: grid;
@@ -247,5 +259,9 @@
     font-size: 1.4rem;
     margin-bottom: 20px;
     color: #333;
+  }
+
+  .mobile-best {
+    display: flex;
   }
 }
